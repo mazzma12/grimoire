@@ -19,7 +19,7 @@ execute:
 
 # Intro
 
-This is a first attempt of a demo with interactive output. We use a basic plotly chart for this
+This is a first / second attempt of a demo with interactive output. We use a basic plotly chart for this
 
 * And so on ..
 
