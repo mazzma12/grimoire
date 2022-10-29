@@ -1,0 +1,1 @@
+Sitemap: https://github.com/mazzma12/grimoire/sitemap.xml
