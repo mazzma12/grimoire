@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
     "objectID": "posts/jupyter-demo/index.html",
     "href": "posts/jupyter-demo/index.html",
     "title": "Jupyter Demo",
@@ -11,13 +18,6 @@
     "href": "index.html",
     "title": "grimoire",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nOct 29, 2022\n\n\nMatthieu\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
+    "text": "Jupyter Demo\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nOct 29, 2022\n\n\nMatthieu\n\n\n\n\n\n\nNo matching items"
   }
 ]
