@@ -30,7 +30,7 @@ help:
 	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
 book: clean-build
-	jupytext --to qmd posts/*/index.py
+	jupytext --to qmd posts/*/*.py
 	quarto render
 	$(BROWSER) $(BUILD_DIR)/index.html
 

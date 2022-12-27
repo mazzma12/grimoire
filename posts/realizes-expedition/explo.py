@@ -24,7 +24,7 @@
 #
 # ## The trip
 #
-# Here is the itinirary
+# Here is the itinerary
 # %%
 import geopandas as gpd
 
@@ -78,23 +78,37 @@ locations_gdf["line"] = gdf.groupby("name").geometry.apply(
 
 # %%
 lines2 = []
-for p1, p2 in zip(locations_gdf.geometry.iloc[:-1,], locations_gdf.shift(-1).geometry):
+for p1, p2 in zip(
+    locations_gdf.geometry.iloc[
+        :-1,
+    ],
+    locations_gdf.shift(-1).geometry,
+):
     lines2.append([[p1.y, p1.x], [p2.y, p2.x]])
 
 lines2.append(None)
 
-locations_gdf['line2'] = lines2
+locations_gdf["line2"] = lines2
 
 # %%
 import json
 
 import geopandas
 from ipywidgets import HTML
-from ipyleaflet import GeoData, LayersControl, Map, Polyline, basemaps, GeoJSON, Marker, FullScreenControl
+from ipyleaflet import (
+    GeoData,
+    LayersControl,
+    Map,
+    Polyline,
+    basemaps,
+    GeoJSON,
+    Marker,
+    FullScreenControl,
+)
 
 m = Map(
-    center=(32.3, 8.0),
-    zoom=3,
+    center=(25.3, -10.0),
+    zoom=2,
     # basemap=basemaps.Esri.WorldTopoMap
 )
 
@@ -121,8 +135,10 @@ for idx, row in locations_gdf.iterrows():
     message2.value = f"{idx}"
     marker.popup = message2
     m.add_layer(marker)
-    
-lines = Polyline(locations=locations_gdf["line2"].dropna().tolist(), color="green", fill=False)
+
+lines = Polyline(
+    locations=locations_gdf["line2"].dropna().tolist(), color="green", fill=False
+)
 m.add_layer(lines)
 m.add_control(LayersControl())
 m
