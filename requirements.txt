@@ -5,3 +5,7 @@ numpy
 pandas 
 plotly
 quarto
+geopandas
+ipyleaflet
+plotly
+nbformat>=4.2.0
